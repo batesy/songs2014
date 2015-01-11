@@ -1,0 +1,80 @@
+#left-col {
+  position: fixed;
+  font-size: 2em;
+  background: rgb(55, 53, 53);
+  color: #e5e5e5;
+  height: 100%;
+}
+
+#mixtape-artwork {
+  background-image: url('../img/endofyear2014.jpg');
+}
+
+.heading {
+  border-bottom: 1px solid #e5e5e5;
+  color: #686868;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+.songs {
+  padding-left: 20px;
+  padding-top: 20px;
+  .song-listing {
+    display: inline-block;
+    margin-bottom: 30px;
+    &:last-child {
+      float: none;
+    }
+    .artwork {
+      height: 185px;
+      width: 185px;
+      background-size: cover;
+      box-shadow: 3px 3px 10px black;
+      .contributor-image {
+        width: 50%;
+        height: 100%;
+        border-right: 2px solid #e5e5e5;
+        // border-bottom: 2px solid #e5e5e5;
+        background-size: cover;
+        background-position: 50%;
+      }
+      .contributor-name {
+        position: absolute;
+        top: 25px;
+        left: 96px;
+        background: rgb(87, 85, 85);
+        color: white;
+        padding: 2px 10px;
+      }
+    }
+    .title {
+      padding-top: 5px;
+    }
+    .artist {
+      font-size: 0.9em;
+      color: #A9A9A9;
+    }
+  }
+}
+.song-details {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;;
+  background: yellow;
+  #close-details {
+    background: rgb(82, 78, 78);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+}
+
+
+
+
+

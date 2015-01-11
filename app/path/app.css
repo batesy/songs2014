@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory - scss
+
+Backtrace:
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:481:in `read'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:481:in `update_stylesheet'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:293:in `watch'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/plugin.rb:108:in `method_missing'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:370:in `watch_or_update'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/exec/base.rb:52:in `parse'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/lib/sass/exec/base.rb:19:in `parse!'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/gems/sass-3.4.7/bin/sass:13:in `<top (required)>'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/bin/sass:23:in `load'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/bin/sass:23:in `<main>'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/bin/ruby_executable_hooks:15:in `eval'
+/Users/gregbates/.rvm/gems/ruby-1.9.3-p550/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - scss"; }

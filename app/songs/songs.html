@@ -1,0 +1,40 @@
+<div class="songs">
+  <div class="row">
+    <div class="small-12 column">
+      <div class="heading">Songs We Listened To A Lot</div>
+    </div>
+      <div class="large-4 column song-listing">
+        <div class="artwork" id="mixtape-artwork">
+        </div>
+      </div>
+      <div class="large-8 column">
+        <p>A message from Skratch & Cosmo + a call to action will go here.</p>
+        <p>{{ vm.showingDetails }}</p>
+      </div>
+    <div class="small-12 column">
+      <div class="heading">Songs Our Friends Listened To</div>
+    </div>
+    <div class="small-12 medium-6 large-4 column song-listing" ng-repeat="song in vm.songs" ng-click="vm.showDetails(song)">
+      <div class="artwork" ng-style="{'background-image':'url({{song.art}})'}">
+        <div ng-style="{'background-image':'url({{song.contributor.image}})'}" alt="" class="contributor-image"></div>
+        <!-- <div class="contributor-name">
+          {{ song.contributor.name }}'s Pick
+        </div> -->
+      </div>
+
+      <div class="title"><strong>{{ song.contributor.name }}'s Pick</strong></div>
+      <div class="artist">{{ song.artist }}</div>
+      {{ vm.isReleased(song) }}
+    </div>
+  </div>
+</div>
+
+<div class="song-details" ng-show="vm.showingDetails == true">
+  Song details! <br>
+  <p>{{vm.details.title}}</p>
+  <div id="close-details">
+    <a ng-click="vm.hideDetails()">X</a>
+  </div>
+</div>
+
+

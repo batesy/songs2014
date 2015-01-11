@@ -1,0 +1,49 @@
+#main-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#left-col {
+
+}
+
+.mix {
+  height: 250px;
+}
+
+.mix .artwork {
+  height: 100%;
+  float: left;
+}
+
+.mix .artwork img {
+  height: 100%;
+}
+
+.mix .coming-soon {
+  float: left;
+}
+
+.song {
+  position: relative;
+  height: 250px;
+}
+
+.song .song-art {
+  height: 200px;
+}
+
+.song .song-art img {
+  height: 100%;
+}
+
+.song .contributor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.song .contributor span {
+
+}
